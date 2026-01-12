@@ -6,7 +6,7 @@ public class primeNumber {
 
         boolean isPrime = true;
         if (a < 2) {
-            isPrime =false;
+            isPrime = false;
         }
         else if (a == 2 && a == 3) {
             isPrime = true;
@@ -15,7 +15,7 @@ public class primeNumber {
             isPrime = false;
         }
         else {
-            for (int i = 5; i * i < a; i += 6) {
+            for (int i = 5 ; i * i < a ; i += 6) {
                 if (a % 1 == 0 || a % (i + 2) == 0) {
                     isPrime = false;
                     break;
